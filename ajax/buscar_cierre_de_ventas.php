@@ -59,7 +59,12 @@
 					<!--<th class='text-right'>Acciones</th>-->
 					
 				</tr>
+				
+				
+
+		
 				<?php
+				$suma=0;
 				while ($row=mysqli_fetch_array($query)){
 						$id_factura=$row['id_factura'];
 						$numero_factura=$row['numero_factura'];
@@ -73,6 +78,7 @@
 						elseif ($estado_factura==3){$text_estado="Gastos";$label_class='label-danger';}
 						else{$text_estado="Pendiente";$label_class='label-warning';}
 						$total_venta=$row['total_venta'];
+						$suma=$suma + $total_venta;
 					?>
 					<tr>
 						<td><?php echo $numero_factura; ?></td>
@@ -97,6 +103,15 @@
 					?></span></td>
 				</tr>
 			  </table>
+			</div>
+			
+			<div class="row container" >
+						<div class="col-md-8">
+						<div class="pull-right">
+							<label style="font-size:24px" > Total | Ventas</label>
+							<input type="text" value="$<?php echo $suma; ?>" disabled="" style="font-size:20px" class="text-center">
+						</div>
+			</div>	
 			</div>
 			<?php
 		}
