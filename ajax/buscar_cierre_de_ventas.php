@@ -108,7 +108,7 @@
 			<div class="row container" >
 						<div class="col-md-8">
 						<div class="pull-right">
-							<label style="font-size:24px" > Total | Ventas</label>
+							<label style="font-size:24px" > Total | Ventas Mensual</label>
 							<input type="text" value="$<?php echo $suma; ?>" disabled="" style="font-size:20px" class="text-center">
 						</div>
 			</div>	
