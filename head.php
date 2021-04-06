@@ -8,6 +8,6 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel=icon href='img/logo-icon.png' sizes="32x32" type="image/png">
 	<?php 
-date_default_timezone_set('America/Argentina/La_Rioja');
+        date_default_timezone_set('America/Argentina/La_Rioja');
         setlocale(LC_TIME, 'es');
 	 ?>

@@ -50,7 +50,7 @@ table.page_footer {width: 100%; border: none; background-color: white; padding: 
         </table>
     </page_footer>
     <?php include("encabezado_factura.php");?>
-    <?php include("./../../head.php");?>
+    
     <br>
     
 
