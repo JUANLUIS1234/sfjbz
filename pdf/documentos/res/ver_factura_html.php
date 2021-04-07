@@ -119,6 +119,8 @@ table.page_footer {width: 100%; border: none; background-color: white; padding: 
         </tr>
 
 <?php
+date_default_timezone_set('America/Argentina/La_Rioja');
+setlocale(LC_TIME, 'es');
 $nums=1;
 $sumador_total=0;
 $sql=mysqli_query($con, "select * from products, detalle_factura, facturas where products.id_producto=detalle_factura.id_producto and detalle_factura.numero_factura=facturas.numero_factura and facturas.id_factura='".$id_factura."'");
