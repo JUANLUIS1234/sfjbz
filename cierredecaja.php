@@ -50,6 +50,7 @@
 									<option value="1">Pagada</option>
 									<option value="2">Pendiente</option>
 									<option value="3">Gastos</option>
+									<option value="4">Servicios</option>
 								</select>
 							</div>
 							<br>

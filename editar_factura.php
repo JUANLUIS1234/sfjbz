@@ -127,6 +127,7 @@
 									<option value="1" <?php if ($estado_factura==1){echo "selected";}?>>Pagado</option>
 									<option value="2" <?php if ($estado_factura==2){echo "selected";}?>>Pendiente</option>
 									<option value="3" <?php if ($estado_factura==3){echo "selected";}?>>Gastos</option>
+									<option value="4" <?php if ($estado_factura==4){echo "selected";}?>>Servicios</option>
 								</select>
 							</div>
 						</div>
