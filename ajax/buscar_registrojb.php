@@ -67,7 +67,7 @@
 		include 'pagination.php'; //include pagination file
 		//pagination variables
 		$page = (isset($_REQUEST['page']) && !empty($_REQUEST['page']))?$_REQUEST['page']:1;
-		$per_page = 10; //how much records you want to show
+		$per_page = 5000; //how much records you want to show
 		$adjacents  = 4; //gap between pages after number of adjacents
 		$offset = ($page - 1) * $per_page;
 		//Count the total number of row in your table*/
@@ -124,7 +124,7 @@
 					<tr>
 						<td><?php echo $factura; ?></td>
 						<td><?php echo $descripcion ?></td>
-						<td>$<?php echo $monto; ?></td>
+						<td>$<?php echo number_format($monto,2); ?></td>
 						<td ><?php echo $concepto; ?></td>
 						<td ><?php echo $periodo; ?></td>
 						<td><?php echo $date_added;?></td>
