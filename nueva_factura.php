@@ -106,8 +106,8 @@
 						<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
 						 <span class="glyphicon glyphicon-search"></span> Agregar productos
 						</button>
-						<button type="submit" class="btn btn-default">
-						  <span class="glyphicon glyphicon-print"></span> Imprimir
+						<button type="submit" class="btn btn-sm btn-success">
+						  <span class="glyphicon glyphicon-print" ></span> Guardar & Imprimir
 						</button>
 					</div>	
 				</div>
