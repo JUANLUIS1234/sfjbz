@@ -89,4 +89,5 @@ $simbolo_moneda=get_row('perfil','moneda', 'id_perfil', 1);
 	<td></td>
 </tr>
 
+
 </table>

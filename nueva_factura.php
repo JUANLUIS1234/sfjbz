@@ -57,6 +57,7 @@
 							<div class="col-md-3">
 								<input type="text" class="form-control input-sm" id="dni1" placeholder="Dni" readonly>
 							</div>
+					
 				 </div>
 						<div class="form-group row">
 							<label for="empresa" class="col-md-1 control-label">Vendedor</label>
@@ -92,6 +93,8 @@
 									<option value="4">Crédito</option>
 								</select>
 							</div>
+							
+							
 						</div>
 				
 				
