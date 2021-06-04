@@ -120,6 +120,7 @@
 									<option value="2" <?php if ($condiciones==2){echo "selected";}?>>Cheque</option>
 									<option value="3" <?php if ($condiciones==3){echo "selected";}?>>Transferencia Bancaria</option>
 									<option value="4" <?php if ($condiciones==4){echo "selected";}?>>Crédito</option>
+									
 								</select>
 							</div>
 							<div class="col-md-2">
@@ -128,6 +129,7 @@
 									<option value="2" <?php if ($estado_factura==2){echo "selected";}?>>Pendiente</option>
 									<option value="3" <?php if ($estado_factura==3){echo "selected";}?>>Gastos</option>
 									<option value="4" <?php if ($estado_factura==4){echo "selected";}?>>Servicios</option>
+									<option value="5" <?php if ($condiciones==5){echo "selected";}?>>Perdidas</option>
 								</select>
 							</div>
 						</div>

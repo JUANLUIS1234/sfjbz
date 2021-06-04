@@ -76,6 +76,7 @@
 						$estado_factura=$row['estado_factura'];
 						if ($estado_factura==1){$text_estado="Pagada";$label_class='label-success';}
 						elseif ($estado_factura==3){$text_estado="Gastos";$label_class='label-danger';}
+						elseif ($estado_factura==5){$text_estado="Perdidas";$label_class='label-danger';}
 						else{$text_estado="Pendiente";$label_class='label-warning';}
 						$total_venta=$row['total_venta'];
 						$suma=$suma + $total_venta;

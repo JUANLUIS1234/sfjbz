@@ -51,6 +51,7 @@
 									<option value="2">Pendiente</option>
 									<option value="3">Gastos</option>
 									<option value="4">Servicios</option>
+									<option value="5">Perdidas</option>
 								</select>
 							</div>
 							<br>
