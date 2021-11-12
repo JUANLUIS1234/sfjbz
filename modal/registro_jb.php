@@ -47,7 +47,7 @@
 					<option >Agosto</option>
 					<option >Septiembre</option>
 					<option >Octubre</option>
-					<option >Nobiembre</option>
+					<option >Noviembre</option>
 					<option >Diciembre</option>
 
 				</select>

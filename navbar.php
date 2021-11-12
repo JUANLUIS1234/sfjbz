@@ -18,14 +18,23 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <!--PERMISO A LOS USUARIOS QUE NO SON ADMINISTRADORES-->
+        <?php if ($_SESSION['user_name']!='admin'):?> 
         <li class="<?php echo $active_facturas;?>"><a href="facturas.php"><i class='glyphicon glyphicon-list-alt'></i> Facturas <span class="sr-only">(current)</span></a></li>
         <li class="<?php echo $active_Ventas;?>"><a href="nueva_factura.php"><i class='glyphicon glyphicon-edit'></i> Ventas</a></li>
         <li class="<?php echo $active_productos;?>"><a href="productos.php"><i class='glyphicon glyphicon-barcode'></i> Productos</a></li>
-		<li class="<?php echo $active_clientes;?>"><a href="clientes.php"><i class='glyphicon glyphicon-user'></i> Clientes</a></li>
-		<li class="<?php echo $active_usuarios;?>"><a href="usuarios.php"><i  class='glyphicon glyphicon-lock'></i> Usuarios</a></li>
-    <li class="<?php echo $active_Gastos;?>"><a href="jbzeus_gastos.php"><i class='glyphicon glyphicon-list-alt'></i> Gastos Local <span class="sr-only">(current)</span></a></li>
-    <li class="<?php echo $active_cierre;?>"><a href="cierredecaja.php"><i class='glyphicon glyphicon-list-alt'></i> Cierre de Caja <span class="sr-only">(current)</span></a></li>
-		<li class="<?php if(isset($active_perfil)){echo $active_perfil;}?>"><a href="perfil.php"><i  class='glyphicon glyphicon-cog'></i> Configuración</a></li>
+        <?php endif;  ?>
+        <!--PERMISO A LOS USUARIOS QUE SON ADMINISTRADORES-->
+        <?php if ($_SESSION['user_name']=='admin'):?> 
+        <li class="<?php echo $active_facturas;?>"><a href="facturas.php"><i class='glyphicon glyphicon-list-alt'></i> Facturas <span class="sr-only">(current)</span></a></li>
+        <li class="<?php echo $active_Ventas;?>"><a href="nueva_factura.php"><i class='glyphicon glyphicon-edit'></i> Ventas</a></li>
+        <li class="<?php echo $active_productos;?>"><a href="productos.php"><i class='glyphicon glyphicon-barcode'></i> Productos</a></li>
+        <li class="<?php echo $active_clientes;?>"><a href="clientes.php"><i class='glyphicon glyphicon-user'></i> Clientes</a></li>
+        <li class="<?php echo $active_usuarios;?>"><a href="usuarios.php"><i  class='glyphicon glyphicon-lock'></i> Usuarios</a></li>
+        <li class="<?php echo $active_Gastos;?>"><a href="jbzeus_gastos.php"><i class='glyphicon glyphicon-list-alt'></i> Gastos Local <span class="sr-only">(current)</span></a></li>
+        <li class="<?php echo $active_cierre;?>"><a href="cierredecaja.php"><i class='glyphicon glyphicon-list-alt'></i> Cierre de Caja <span class="sr-only">(current)</span></a></li>
+        <li class="<?php if(isset($active_perfil)){echo $active_perfil;}?>"><a href="perfil.php"><i  class='glyphicon glyphicon-cog'></i> Configuración</a></li>
+        <?php endif;  ?>
        </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://jbzeus.com/tienda/index.php?view=soporte" target='_blank'><i class='glyphicon glyphicon-envelope'></i> Soporte</a></li>

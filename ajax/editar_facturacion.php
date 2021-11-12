@@ -56,16 +56,19 @@ $simbolo_moneda=get_row('perfil','moneda', 'id_perfil', 1);
 	$precio_total_r=str_replace(",","",$precio_total_f);//Reemplazo las comas
 	$sumador_total+=$precio_total_r;//Sumador
 	
-		?>
+?>
 		<tr>
 			<td class='text-center'><?php echo $codigo_producto;?></td>
 			<td class='text-center'><?php echo $cantidad;?></td>
 			<td><?php echo $nombre_producto;?></td>
 			<td class='text-right'><?php echo $precio_venta_f;?></td>
 			<td class='text-right'><?php echo $precio_total_f;?></td>
+            <!--PERMISO A LOS USUARIOS QUE SON ADMINISTRADORES-->
+			<?php if ($_SESSION['user_name']=='admin'):?> 
 			<td class='text-center'><a href="#" onclick="eliminar('<?php echo $id_detalle ?>')"><i class="glyphicon glyphicon-trash"></i></a></td>
+			<?php endif;  ?>
 		</tr>		
-		<?php
+<?php
 	}
 	$impuesto=get_row('perfil','impuesto', 'id_perfil', 1);
 	$subtotal=number_format($sumador_total,2,'.','');
